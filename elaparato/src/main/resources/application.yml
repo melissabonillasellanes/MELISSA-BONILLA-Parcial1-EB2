@@ -1,0 +1,30 @@
+server:
+  port: 8086
+
+elaparato:
+  keycloak:
+    serverUrl: http://localhost:8080
+    realm: el-aparato-melissa-bonilla
+    clientId: api-internal-users-client
+    clientSecret: 9GizD5gq4wgBPuBfn2LOJjVQ9NtVrrcq
+
+spring:
+  application:
+    name: elaparato
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/el-aparato-melissa-bonilla
+  datasource:
+    url: jdbc:mysql://localhost:3306/elaparato?createDatabaseIfNotExist=true
+    username: root
+    password: meli19
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true

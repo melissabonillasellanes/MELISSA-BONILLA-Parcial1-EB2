@@ -1,0 +1,16 @@
+Reino:
+el-aparato-melissa-bonilla
+
+Clientes:
+api-gateway-client
+api-internal-users-client
+
+Roles de reino:
+app_administrador
+app_repositor
+app_vendedor
+
+Usuarios:
+administrador: elaparato123
+repositor: elaparato123
+vendedor: elaparato123
